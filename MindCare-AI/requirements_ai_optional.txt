@@ -1,0 +1,10 @@
+# Optional advanced AI packages for multimodal demos.
+# The app works without these packages by using safe local fallbacks.
+
+transformers>=4.40.0
+torch>=2.2.0
+opencv-python>=4.9.0
+mediapipe>=0.10.0
+deepface>=0.0.90
+librosa>=0.10.0
+SpeechRecognition>=3.10.0
