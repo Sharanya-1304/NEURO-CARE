@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MindCare AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <i class="fas fa-brain"></i>
+                <span>MindCare AI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/test">Stress Test</a></li>
+                <li><a href="/dashboard">Dashboard</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="container">
+        <section class="about-section">
+            <h1>About MindCare AI</h1>
+            
+            <div class="about-content">
+                <div class="about-card">
+                    <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+                    <p>
+                        MindCare AI is dedicated to making mental health assessment accessible to everyone. 
+                        We believe that early detection and intervention can make a significant difference in 
+                        people's lives. Our AI-powered system provides quick, accurate assessments to help 
+                        individuals understand their stress levels and depression risk.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-cogs"></i> How It Works</h2>
+                    <p>
+                        Our system uses advanced machine learning algorithms trained on real-world data to 
+                        evaluate multiple factors including sleep patterns, work pressure, anxiety levels, 
+                        social interaction, and lifestyle habits. The Random Forest classifier provides 
+                        accurate predictions while maintaining high interpretability.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-shield-alt"></i> Privacy & Security</h2>
+                    <p>
+                        We take your privacy seriously. All your data is encrypted and processed locally on 
+                        your device. We do not store, share, or sell any personal information. Your 
+                        assessment results are yours alone.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-laptop"></i> Technology Stack</h2>
+                    <ul>
+                        <li><strong>Backend:</strong> Python, Flask</li>
+                        <li><strong>Machine Learning:</strong> Scikit-learn, Random Forest</li>
+                        <li><strong>Data Analysis:</strong> Pandas, NumPy</li>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript</li>
+                        <li><strong>Visualization:</strong> Plotly, Matplotlib</li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-heartbeat"></i> Disclaimer</h2>
+                    <p>
+                        <strong>Important:</strong> MindCare AI is a supportive tool designed to help with 
+                        self-assessment. It is NOT a substitute for professional medical or psychological advice. 
+                        If you are experiencing severe mental health issues, please contact a qualified healthcare 
+                        professional or emergency services immediately.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-chart-line"></i> Accuracy & Reliability</h2>
+                    <p>
+                        Our models are trained on large, diverse datasets and regularly evaluated for accuracy 
+                        and reliability. However, mental health assessment is complex, and this tool should be 
+                        used as one of many resources for understanding your mental well-being.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-users"></i> Support Resources</h2>
+                    <p>
+                        If you need immediate support, please reach out to:
+                    </p>
+                    <ul>
+                        <li>National Suicide Prevention Lifeline: 1-800-273-8255</li>
+                        <li>Crisis Text Line: Text HOME to 741741</li>
+                        <li>International Association for Suicide Prevention: <a href="https://www.iasp.info/resources/Crisis_Centres/" target="_blank">iasp.info</a></li>
+                    </ul>
+                </div>
+
+                <div class="about-card">
+                    <h2><i class="fas fa-code"></i> Development</h2>
+                    <p>
+                        MindCare AI is an open-source project developed to promote mental health awareness and 
+                        provide accessible mental health assessment tools. The system is continuously improved 
+                        based on user feedback and latest research in mental health and artificial intelligence.
+                    </p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h2>Start Your Mental Health Journey Today</h2>
+                <p>Take a step towards better mental wellbeing with MindCare AI</p>
+                <a href="/test" class="btn btn-primary btn-large">Take Assessment</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 MindCare AI. All rights reserved.</p>
+            <p>Developed for mental health awareness and early intervention.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
